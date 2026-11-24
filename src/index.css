@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body { margin: 0; background: #f3f4f6; font-family: 'Noto Sans KR', system-ui, sans-serif; color: #111827; }
+button { font-family: inherit; }
+:focus-visible { outline: 2px solid #6d28d9; outline-offset: 2px; }
+@media print {
+  .no-print { display: none !important; }
+  html, body { background: #fff; }
+  .doc-card { break-inside: avoid; box-shadow: none; }
+  .frame-scroll { overflow: visible !important; max-height: none !important; }
+}
